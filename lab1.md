@@ -12,4 +12,4 @@ I typed "cd lecture1" which direct to the folder as the path. Then I typed the m
 3. Share an example of using the command with a path to a file as an argument.
    ![image](https://github.com/marksui/cse15l-lab-reports/assets/146782343/c60442b9-8905-4dd3-afe7-53c79392c3fd)
 
-For "cd Hello.class", since it is not a path. So the showed error. For ls, it just showed the list of the files. And for "cat Hello.class", it showed the content of the Hello.class.
+For "cd Hello.class", since it is not a path. So the showed error. Because we can not cd a file, we only can cd a path. For ls, it just showed the list of the files. And for "cat Hello.class", it showed the content of the Hello.class.

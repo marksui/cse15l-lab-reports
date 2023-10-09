@@ -9,9 +9,9 @@ The instruction for question 1 is to navigate to the `"/home"` directory using t
 *2. Share an exmaple of using the command with a path to a directory as an argument.*
 ![image](https://github.com/marksui/cse15l-lab-reports/assets/146782343/47e8ba46-129f-49a0-8356-e44f58230b1c)
 
-I entered the command `cd lecture1` which directed me to the folder specified by the path. Then, I entered the command `"ls message"` which showed me the folders and files in this path. After that, I entered the command `'cat message'` but it displayed a message indicating that `'message'` is a directory, not a file.
+I entered the command `cd lecture1` which directed me to the folder specified by the path. Then, I entered the command `"ls message"` which showed me the folders and files in this path. After that, I entered the command `'cat message'` but it displayed a message indicating that `'message'` is a directory, not a file. The terimal showed the error because I entered a directory, the `cat` command is only can be use for `cat /file/`.
 
 *3. Share an example of using the command with a path to a file as an argument.*
    ![image](https://github.com/marksui/cse15l-lab-reports/assets/146782343/c60442b9-8905-4dd3-afe7-53c79392c3fd)
 
-When attempting to use the command `'cd Hello.class'` an error occurred because it is not a valid path. The `"cd"` command is used to change directories, and it requires a valid directory path, not a file name. Similarly, the `"ls Hello.class"` command simply lists the files and directories in the current directory. Lastly, when using the `"cat Hello.class"` command, it displayed the content of the `"Hello.class"` file.
+When attempting to use the command `'cd Hello.class'` an error occurred because it is not a valid path. Because the `Hello.class` is a file, not a directory. The `"cd"` command is used to change directories, and it requires a valid directory path, not a file name. Similarly, the `"ls Hello.class"` command simply lists the files and directories in the current directory. Lastly, when using the `"cat Hello.class"` command, it displayed the content of the `"Hello.class"` file.

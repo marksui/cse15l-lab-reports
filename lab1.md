@@ -1,3 +1,5 @@
+# Lab1 
+
 ![image](https://github.com/marksui/cse15l-lab-reports/assets/146782343/efba7c35-960d-4936-b493-4dce3fda083c)
 
 *1. Share an example of using the command with no arguments.*

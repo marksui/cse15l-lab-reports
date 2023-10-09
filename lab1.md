@@ -2,7 +2,7 @@
 
 *1. Share an example of using the command with no arguments.*
    
-![image](https://github.com/marksui/cse15l-lab-reports/assets/146782343/6cc31c7a-a592-452c-a2be-22e932f67456)
+![image](https://github.com/marksui/cse15l-lab-reports/assets/146782343/30373bec-72f0-4c2c-b22e-6f59df8ef537)
 
 The instruction for question 1 is to navigate to the `"/home"` directory using the `"pwd"` command. When using the `"cd"` command, if no directory is specified, it returns you to the previous folder. However, since we are already in the home directory, it remains in the current folder. The "ls" command is used to display a list of files and folders in the specified path. Meanwhile, the "cat" command is used to print the contents of one or more files specified by their paths. When no arguments are provided, nothing happens; you'll need to type some text. To exit, you can use "ctrl+D."
 

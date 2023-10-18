@@ -22,9 +22,9 @@ No Error for the `ls`,`cd`, and `cat`.
 *Working Directory: `/home`*
 1. I entered the command `cd lecture1` which directed me to the folder specified by the path.
 *Working Directory: `/home/lecture1`*
-3. Then, I entered the command `"ls message"` which showed me the folders and files in this path.
-4. *Working Directory: `/home/lecture1`*
-5. After that, I entered the command `'cat message'` but it displayed a message indicating that `'message'` is a directory, not a file. The terimal showed the error because I entered a directory, the `cat` command is only can be use for `cat /file/`.
+2. Then, I entered the command `"ls message"` which showed me the folders and files in this path.
+*Working Directory: `/home/lecture1`*
+3. After that, I entered the command `'cat message'` but it displayed a message indicating that `'message'` is a directory, not a file. The terimal showed the error because I entered a directory, the `cat` command is only can be use for `cat /file/`.
 
 Summary:
 No Error for the `ls` and 'cd`.

@@ -2,31 +2,26 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    
+
     int num = 0;
 
     public String handleRequest(URI url) {
-        if (url.getPath().equals("/")) {
-            return String.format("Number: %d", num);
-        } else if (url.getPath().equals("/add")) {
-            string add****;
-            return String.format("Added!");
-        } else {
-            if (url.getPath().contains("/add")) {
-                String[] parameters = url.getQuery().split("=");
-                if (parameters[0].equals("count")) {
-                    num += Integer.parseInt(parameters[1]);
-                    return String.format("Number increased by %s! It's now %d", parameters[1], num);
-                }
+        if (url.getPath().equals("/add-message")) {
+            if (query.startsWith("s=")) {
+                String toAdd = query.split("=")[1];
+                this.lines.add(toAdd);
+                return String.format("%s. %s\n", this.lines.size(), toAdd);
+            } else {
+                return "Need a Query\n";
             }
-            return "404 Not Found!";
         }
     }
 }
 
+
 class NumberServer {
     public static void main(String[] args) throws IOException {
-        if(args.length == 0){
+        if (args.length == 0) {
             System.out.println("Missing port number! Try any number between 1024 to 49151");
             return;
         }

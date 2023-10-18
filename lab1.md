@@ -30,5 +30,5 @@ Error for `cat`, b/c open the file, but not for the directory.
 When attempting to use the command `'cd Hello.class'` an error occurred because it is not a valid path. Because the `Hello.class` is a file, not a directory. The `"cd"` command is used to change directories, and it requires a valid directory path, not a file name. Similarly, the `"ls Hello.class"` command simply lists the files and directories in the current directory. Lastly, when using the `"cat Hello.class"` command, it displayed the content of the `"Hello.class"` file. The mojibake displayed is characters in a different language, since the terminal is not set to `UTF-8`.
 
 Summary:
-No Error for the `ls` and 'cat`.
-Error for `cd`, b/c it changes the working directory, not the file.
+No Error for the `ls` and `cat`.
+Error for `cd` , b/c it changes the working directory, not the file.

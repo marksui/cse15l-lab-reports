@@ -4,7 +4,7 @@
 
 *1. Share an example of using the command with no arguments.*
    
-<img width="944" alt="1" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/414e4b5d-c06f-40d9-9f63-15ee8a32eaed">
+<img width="944" alt="1" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/7804aa03-cf00-42de-9c20-8a4d83a1eb98">
 
 1. The instruction for question 1 is to navigate to the `"/home"` directory using the `"pwd"` command. When using the `"cd"` command, if no directory is specified, it returns you to the previous folder. However, since we are already in the home directory, it remains in the current folder.
 *Working Directory: `/home` for 1* <br />
@@ -19,7 +19,7 @@ Summary for Error Messages: <br />
 No Error for the `ls`,`cd`, and `cat`. <br />
 
 *2. Share an exmaple of using the command with a path to a directory as an argument.*
-<img width="918" alt="2" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/ed087659-4df3-4045-9023-055237769366">
+<img width="918" alt="2" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/a1d2fa41-7c14-4e35-9175-d19b4ecbe97a">
 
 1. I entered the command `cd lecture1` which directed me to the folder specified by the path. <br />
 *Working Directory: `/home for 1`* <br />

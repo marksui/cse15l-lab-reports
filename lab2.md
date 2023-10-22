@@ -57,32 +57,24 @@ class StringServer {
 ```
 <br>
 <img width="796" alt="12" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/878cbb61-864a-4d11-ab3a-ce73f30f1bc2"> <br>
-Which methods in your code are called?
+*Which methods in your code are called?* <br>
 handleRequest(URI url) method. 
-What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-Relevant Arguments:
-
-url: This is the URI of the incoming HTTP request, which includes the path and query parameters.
-Relevant Fields:
-
-lines: This is an ArrayList of strings that stores the messages added by the client. It's used to maintain a list of messages.
-How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
-When the client sends a request to /add-message?s=Hello, the lines list is initially empty. After processing the request, the lines list will contain one element, which is "Hello". This is because the message "Hello" is added to the list.
-
+*What are the relevant arguments to those methods, and the values of any relevant fields of the class?* <br>
+Relevant Arguments is the `url` to the `handleRequest` method. This is the URI of the incoming HTTP request, which includes the path and query parameters. Relevant Fields is `lines` which is an ArrayList of strings, used to maintain a list of `add-messages`.
+*How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.* <br>
+When we add to the `url` sends a request to `/add-message?s=Hello`, the lines list is initially empty. After add the message, the `lines` list will contain one string variable, which is "Hello". Because the message "Hello" is added to the list.
+<br>
 
 <img width="858" alt="13" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/d357cd38-53d8-4ff2-9050-5e02fe063dbc"> <br>
-Which methods in your code are called?
+*Which methods in your code are called?* <br>
 handleRequest(URI url) method. 
-What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-Relevant Arguments:
-
-url: This is the URI of the incoming HTTP request, which includes the path and query parameters.
-Relevant Fields:
-
-lines: This is an ArrayList of strings that stores the messages added by the client. It's used to maintain a list of messages.
-How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
-When the client sends a request to /add-message?s=Hello, the lines list is initially empty. After processing the request, the lines list will contain one element, which is "Hello". This is because the message "Hello" is added to the list.
-
+<br>
+*What are the relevant arguments to those methods, and the values of any relevant fields of the class?* <br>
+Relevant Arguments is the `url` to the `handleRequest` method. This is the URI of the incoming HTTP request, which includes the path and query parameters. Relevant Fields is `lines` which is an ArrayList of strings, used to maintain a list of `add-messages`.
+<br>
+*How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.* <br>
+When we add to the `url` sends a request to `/add-message?s=Hello`, the lines list is initially empty. After add the message, the `lines` list will contain one string variable, which is "Hello". Because the message "Hello" is added to the list.
+<br>
 
 
 ## Part2

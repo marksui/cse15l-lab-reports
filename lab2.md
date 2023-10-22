@@ -57,23 +57,31 @@ class StringServer {
 ```
 <br>
 <img width="796" alt="12" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/878cbb61-864a-4d11-ab3a-ce73f30f1bc2"> <br>
+
 *Which methods in your code are called?* <br>
 handleRequest(URI url) method. 
+<br><br>
 *What are the relevant arguments to those methods, and the values of any relevant fields of the class?* <br>
 Relevant Arguments is the `url` to the `handleRequest` method. This is the URI of the incoming HTTP request, which includes the path and query parameters. Relevant Fields is `lines` which is an ArrayList of strings, used to maintain a list of `add-messages`.
+<br><br>
 *How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.* <br>
-When we add to the `url` sends a request to `/add-message?s=Hello`, the lines list is initially empty. After add the message, the `lines` list will contain one string variable, which is "Hello". Because the message "Hello" is added to the list.
+When we add to the `url` sends a request to `/add-message?s=Hello`, the lines list is initially empty. After add the message, the `lines` list will contain one string variable, which is "Hello". Because the message "Hello" is added to the list. Before the request, lines is an empty list.
+After the request, the value of lines is "Hello".
+<br>
+The client sends a request to `/add-message?s=Hello.` The `handleRequest` method is called. The query variable is set to `s=Hello`. Since the `url.getPath()` is `/add-message`, the code check if the query starts with "s=", which is true. The `toAdd` variable is set to `”Hello”` by splitting the query. Then the it added to the `lines` list. The output is a `StringBuilder`. A for loop iterates over the `lines` list. In the first for-loop iteration, set "Hello" to output. Finally, it will return out "1. Hello\n".
 <br>
 
 <img width="858" alt="13" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/d357cd38-53d8-4ff2-9050-5e02fe063dbc"> <br>
 *Which methods in your code are called?* <br>
 handleRequest(URI url) method. 
-<br>
+<br><br>
 *What are the relevant arguments to those methods, and the values of any relevant fields of the class?* <br>
 Relevant Arguments is the `url` to the `handleRequest` method. This is the URI of the incoming HTTP request, which includes the path and query parameters. Relevant Fields is `lines` which is an ArrayList of strings, used to maintain a list of `add-messages`.
-<br>
+<br><br>
 *How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.* <br>
-When we add to the `url` sends a request to `/add-message?s=Hello`, the lines list is initially empty. After add the message, the `lines` list will contain one string variable, which is "Hello". Because the message "Hello" is added to the list.
+When we add to the `url` sends a request to `/add-message?s=Hello`, the lines list is initially empty. After add the message, the `lines` list will contain one string variable, which is "How are you". Before the request, lines is "Hello" from picture1. Because the message "How are you" is added to the list. After the request, the value of lines is "Hello", "How are you". <br>
+
+The client sends a request to `/add-message?s=Hello.` The `handleRequest` method is called. The query variable is set to `s=How are you`. Since the `url.getPath()` is `/add-message`, the code check if the query starts with "s=", which is true. The `toAdd` variable is set to `”How are you”` by splitting the query. Then the it added to the `lines` list. The output is a `StringBuilder`. A for loop iterates over the `lines` list. In the first for-loop iteration, set "Hello" to output, and the second for-loop, set "How are you" to output. Finally, it will return out "1. Hello\n 2. How are you\n".
 <br>
 
 

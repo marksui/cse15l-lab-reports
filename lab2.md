@@ -2,6 +2,65 @@
 
 ## Part1
 
+Code:
+```ruby
+
+import java.io.IOException;
+import java.net.URI;
+import java.util.List;
+import java.util.ArrayList;
+import java.net.URLDecoder;
+
+class Handler implements URLHandler {
+    List<String> lines = new ArrayList<>();
+    public String handleRequest(URI url) {
+        String query = url.getQuery();
+        if (url.getPath().equals("/add-message")) {
+            if (query != null && query.startsWith("s=")) {
+                String toAdd = query.split("=")[1];
+                this.lines.add(toAdd);
+                StringBuilder output = new StringBuilder();
+                for (int i = 0; i < lines.size(); i++) {
+                    try 
+                    {
+                        String decodedToAdd = URLDecoder.decode(lines.get(i), "UTF-8");
+                        output.append(String.format("%d. %s\n", i + 1, decodedToAdd));
+                    } 
+                    catch (java.io.UnsupportedEncodingException err) 
+                    {
+                        System.err.println(err.getMessage());
+                    }
+
+                }
+                return output.toString();
+            } else {
+                return "Need a Query\n";
+            }
+        }
+
+        return "Use `/add-message` to add query. \n";
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if (args.length == 0) {
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
+<br>
+<img width="796" alt="12" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/878cbb61-864a-4d11-ab3a-ce73f30f1bc2"> <br>
+
+<img width="858" alt="13" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/d357cd38-53d8-4ff2-9050-5e02fe063dbc"> <br>
+
+
 ## Part2
 <img width="624" alt="11" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/08f571cb-6af2-4467-b85e-e13b8882875e"> <br>
 **The path to the private key for your SSH key for logging into ieng6** <br>

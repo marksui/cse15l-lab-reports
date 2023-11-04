@@ -46,3 +46,15 @@ After:
   }
 ```  
 How to fix the bug?
+
+
+## Part2
+grep -n
+grep -n "pattern" file.txt
+
+grep -w
+
+grep -A -B
+grep -A 2 -B 2 "pattern" file.txt
+
+grep -i

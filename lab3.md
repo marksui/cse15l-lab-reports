@@ -1,8 +1,11 @@
 # Lab2
 
 ## Part1
+<br>
 
-A failure-inducing input for the buggy program, as a JUnit test and any associated code:
+**A failure-inducing input for the buggy program, as a JUnit test and any associated code:**
+<br>
+
 ```ruby
 @Test
 public void testReverseInPlaceFailure()
@@ -13,7 +16,9 @@ public void testReverseInPlaceFailure()
 }
 ```
 
-An input that doesn’t induce a failure, as a JUnit test and any associated code:
+**An input that doesn’t induce a failure, as a JUnit test and any associated code:**
+<br>
+
 ```ruby
 public void testReverseInPlace()
 {
@@ -23,11 +28,15 @@ public void testReverseInPlace()
 }
 ```
 
-The symptom, as the output of running the tests:
+**The symptom, as the output of running the tests:**
+<br>
+From the image, we can see that the `reverseInPlace` function is not working as expected, which results in a failure during testing. It shows "3," but the correct answer should be "1." This indicates that the method is not functioning correctly, and we need to make edits to it.
+<br>
 <img width="994" alt="截屏2023-11-04 下午2 09 35" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/696df5e7-3acf-467e-8243-0a1d4c40519e">
 
 
-Before:
+**Before the change:**
+
 ```ruby
 static void reverseInPlace(int[] arr) {
   for(int i = 0; i < arr.length; i += 1) {
@@ -35,7 +44,8 @@ static void reverseInPlace(int[] arr) {
   }
 }
 ```
-After:
+**After the change:**
+
 ```ruby
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length / 2; i += 1) {
@@ -44,8 +54,9 @@ After:
       arr[arr.length - i - 1] = temp;
     }
   }
-```  
-How to fix the bug?
+```
+<br>
+Before the modification, the code tried to invert the array. But the original version doesn't do it very well because the logic is wrong. In essence the program provided was overwriting the elements with mirrored elements, so that caused the error brought on by the test. If you only iterate to half of the array and swap the elements at the ends, you can correctly invert the elements in the array.
 
 
 ## Part2

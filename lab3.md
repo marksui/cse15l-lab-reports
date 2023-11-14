@@ -60,7 +60,7 @@ Before the modification, the code tried to invert the array. But the original ve
 
 
 ## Part2
-# **grep -n**  <br>
+### **grep -n**  <br>
 We used`grep -n "done" technical/911report/preface.txt` and `grep "done" technical/911report/preface.txt`  <br>
 The `grep` command is used to search for patterns in text. <br>
 The `-n` option is used to display line numbers along with the matching lines.  <br>
@@ -103,7 +103,7 @@ $ grep -n "All" technical/911report/preface.txt
 <img width="901" alt="截屏2023-11-04 下午4 15 11" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/11609309-580f-4abb-998c-b86343358a04">
 
 ================================================================ <br>
-# **grep -w**  <br>
+### **grep -w**  <br>
 The `grep` command is used to search for patterns in text. <br>
 The `-w` option ensures that the pattern is matched as a complete and exact word and not as part of a word. <br>
 
@@ -153,7 +153,7 @@ $ grep "us" technical/911report/preface.txt
 <img width="931" alt="截屏2023-11-04 下午3 58 16" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/1f485762-6e95-45f8-b9e2-ead44f3cf4de">
 
 ================================================================ <br>
-# **grep -A -B**  <br>
+### **grep -A -B**  <br>
 The `grep` command is used to search for patterns in text. <br>
 The `-A (after) and -B (before)` options specify how many lines of context to display before and after the matched line.  <br>
 
@@ -187,7 +187,7 @@ $ grep -A 1 -B 3 "This" technical/911report/preface.txt
 `grep -A 1 -B 3 "This" technical/911report/preface.txt` and `grep "This" technical/911report/preface.txt`, the `-A -B` option let the word search `grep` display lines of context 1 line before and 3 lines after the matched line. <br>
 <img width="902" alt="截屏2023-11-04 下午4 04 41" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/ce194c36-bef2-419e-a767-88e2f5333f70">
 ================================================================ <br>
-# **grep -i**  <br>
+### **grep -i**  <br>
 The `grep` command is used to search for patterns in text. <br>
 The `-i` option let search is case-insensitive.  <br>
 `grep -i "This" technical/911report/preface.txt`

@@ -1,7 +1,7 @@
 # Lab 4
 ### Step 4
 Use `ssh` command to login into the ieng6 account.
-
+`ssh cse15lfa23ey@ieng6.ucsd.edu` `<enter>`
 
 ### Step 5
 Use `git clone` command to clone the fork of repository from my github account. <br>

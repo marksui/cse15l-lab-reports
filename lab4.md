@@ -1,4 +1,5 @@
-<img width="853" alt="截屏2023-11-19 下午8 24 34" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/1caa94ad-4374-48e2-b221-ef28df2ca583"># Lab 4
+# Lab 4
+
 ### Step 4
 Use `ssh` command to login into the ieng6 account. <br>
 `ssh cs15lfa23ey@ieng6.ucsd.ed` `<enter>` <br>

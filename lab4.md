@@ -12,7 +12,7 @@ Use `git clone` command to clone the fork of repository from my github account. 
 
 
 ### Step 6
-Use the `pwd` `<enter>` and `ls` <enter>` command to find the directory and files and folder inside. Then type `cd lab7` `<enter>` command to the lab7 folder. Finally, we can type `bash test.sh``<enter>` to compile java files, and to run the java test. We would have the test results. The test is failed. 
+Use the `pwd` `<enter>` and `ls` `<enter>` command to find the directory and files and folder inside. Then type `cd lab7` `<enter>` command to the lab7 folder. Finally, we can type `bash test.sh``<enter>` to compile java files, and to run the java test. We would have the test results. The test is failed. 
 <img width="853" alt="截屏2023-11-19 下午8 24 34" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/fd6be6b0-359b-4769-87ea-a3ef51cf773e">
 
 
@@ -23,8 +23,8 @@ Since from step 6, we failed test. We need to edit the code to fix it. First, we
 Into the vim txt edit mode,  <br>
 First, press `<j>` 43 times, so that editor moves cursor to line 43  <br>
 Second, press `<l>` 12 times, so that editor moves cursor to the space after `index1`  <br>
-Third, press `<i>` to edit text mode<br>
-Fourth, press `<backspace>` to delete the `1` of `index1`    <br>
+Third, press `<i>` to edit text mode <br>
+Fourth, press `<backspace>` to delete the `1` of `index1`   <br>
 Fifth, press `<2>` to add 2 after `index`, so we changed `index1` to `index2`  <br>
 Final, press `<esc>``:wq` `<enter>` to save and exit.   <br>
 <img width="659" alt="截屏2023-11-19 下午8 34 07" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/b4fc1756-ffec-4d59-9295-33dad187260f">

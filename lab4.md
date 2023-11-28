@@ -36,9 +36,8 @@ From the screenshot image, we can see that we solve the bug.
 
 
 ### Step 9
-Type command `git add ListExamples.java` to add ListExamples.java to commits
-Type command `git commit -m "done"` to commit the change to my github account
-Type command `git push` to push the changes
-<img width="1043" alt="截屏2023-11-19 下午8 53 18" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/927ddf57-8c10-40b8-b445-5bebd9864456">
-
+Type command `git add ListExamples.java` `<enter>` to add ListExamples.java to commits <br>
+Type command `git commit -m "done"` `<enter>` to commit the change to my github account <br>
+Type command `git push` `<enter>` to push the changes
+<img width="679" alt="截屏2023-11-27 下午10 51 27" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/a00b79a0-edc0-4108-91f7-de18f5d8bd0f">
 

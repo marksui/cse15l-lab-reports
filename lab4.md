@@ -8,7 +8,7 @@ Use `ssh` command to login into the ieng6 account. <br>
 ### Step 5
 Use `git clone` command to clone the fork of repository from my github account. <br>
 `git clone git@github.com:marksui/lab7.git` `<enter>` <br>
-<img width="750" alt="截屏2023-11-27 下午10 44 41" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/9e854c6d-9b5e-429e-b1f5-ab8beb2fb323">
+<img width="750" alt="截屏2023-11-27 下午10 44 41" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/03e52bb0-226b-4e22-bfb1-4394249e2ab7">
 
 
 ### Step 6

@@ -2,7 +2,7 @@
 
 ### Step 4
 Use `ssh` command to login into the ieng6 account. <br>
-`ssh cs15lfa23ey@ieng6.ucsd.ed` `<enter>` <br>
+`ssh cs15lfa23ey@ieng6.ucsd.edu` `<enter>` <br>
 <img width="505" alt="截屏2023-11-19 下午8 14 10" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/3a5973ec-92c1-41dc-9a23-e2a803d7af98">
 
 ### Step 5

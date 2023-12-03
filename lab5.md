@@ -4,21 +4,27 @@
 ### Step 1
 #### The theoretical Ed post by a student: <br>
 The environment: <br>
-`Student's response: I am using macOs system and using Visual Studio code to edit.`
+`Student's response: I am using macOs system and using Visual Studio(Version: 1.84.0 (Universal)) code and java version "21.0.1" to edit.`
 
 Detail the symptom: <br>
-`Student's response: When I using the `bash grade.sh` command to complie and run the java files. The terimal showed crashes. In the bash script, there is only one file named "main.java" that is compiled and run. When I run the compile and run commands separately, the java file prints "Hello World" perfectly on the terminal, but when I try to use the bash script, the terminal crashes. '
+`Student's response: When I use the bash grade.sh command to compile and run the Java files, the terminal shows nothing. I feel really confused, and nothing happens. In the bash script, there is only one file named "NumberGuessingGame.java" that is compiled and run. When I run the compile and run commands separately, the command in the terminal is okay, but when I used the bash, it is not working. However, when I try to use the bash command, nothing happens in the terminal. '
 
 A detailed description of the inputs and contexts that triggered the fault: <br>
-`Student's response: I'm in the PS C:\Users\mboyk\CSE15L\DemoLab5 working directory which houses the HelloWorld.java and the runB.sh script. I run the bash script in the working directory, and it fails. I tried running the bash script before and after manually compiling the java file, but in either case the terminal crashes. `
+`Student's response: The working directory for the java and sh files are in /Users/mark/Desktop/lab5. I am really sure that I am in the working directory. When I entered those command in the terminal by my hands, it is okay. But when I used the bash, it is not working. I uploaded my screenshot and the code. Maybe it is my environment differences or my grade.sh it contains some format error.`
+<img width="826" alt="截屏2023-12-03 下午2 02 55" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/4307f7cc-890d-43e7-8d9c-61692920222f">
+<img width="494" alt="截屏2023-12-03 下午2 21 55" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/3086d284-0219-426b-bf2b-4b371ef84d11">
+<img width="484" alt="截屏2023-12-03 下午2 21 52" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/3762d357-61a2-43da-9904-a03ea9da73c8">
+
+
 
 ### Step 2
 #### A response from a TA asking a leading question or suggesting a command to try
-`TA response: Hi Mark, I'm looking at your terminal, and I noticed that although it says "bash" on the right side of the terminal screen, your working directory is given in similar form to that of the powershell format for Windows. Could you try and press the down arrow next to the "+" on the right side of your terminal and add a "Git Bash" terminal. From there try running the same bash command as before bash runB.sh and let me know if it's still freezing your terminal. Thanks for the detailed description of your bug, hope this helps!`
-
+`TA response: Hi Mark, From what I've seen so far, I think there's something wrong inside your bash because you've also specifically set up if conditions, but it seems to me that there's some problem with that. I suggest you look up the if condition in the command, like -ne -eq and what that means. I suggest you change this line <if [ $? -ne 0 ]; then>. Thanks for the detailed description, hope this wroks for you.`
 
 ### Step 3
-image
+<img width="640" alt="截屏2023-12-03 下午2 43 02" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/aa9dddf3-8bff-4bc0-9cf7-7005fcb8e3f1">
+<img width="434" alt="截屏2023-12-03 下午2 43 04" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/b28c591a-1ec1-44e9-b9c5-b1e1e9175aab">
+
 The bug was that although the student believed they were running their bash commands in a bash terminal, in reality, the terminal trying to run the commands was not appropriate. The powershell terminal initally says "powershell" on the right side of the terminal when added, but after typing a bash command into the terminal, it becomes called "bash" which can be confusing and has confused me in the past. I decided to choose this bug because it has happened to me in the past and the help from google on this particular bug is difficult to find.
 
 ### Step 4

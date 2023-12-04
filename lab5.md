@@ -22,9 +22,9 @@ A detailed description of the inputs and contexts that triggered the fault: <br>
 `TA response: Hi Mark, From what I've seen so far, I think there's something wrong inside your bash because you've also specifically set up if conditions, but it seems to me that there's some problem with that. I suggest you look up the if condition in the command, like -ne -eq and what that means. I suggest you change this line <if [ $? -ne 0 ]; then>. Thanks for the detailed description, hope this wroks for you.`
 
 ### Step 3
-<img width="640" alt="截屏2023-12-03 下午2 43 02" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/aa9dddf3-8bff-4bc0-9cf7-7005fcb8e3f1">
-<img width="434" alt="截屏2023-12-03 下午2 43 04" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/b28c591a-1ec1-44e9-b9c5-b1e1e9175aab">
-This bug came up when student didn't not know how to use `-ne` and `-eq` for comment, and TA was good in helping him understand the concept. It's because the bash is not reporting an error, just a logical error, because the program is working.
+<img width="640" alt="截屏2023-12-03 下午2 43 02" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/aa9dddf3-8bff-4bc0-9cf7-7005fcb8e3f1"> <br>
+<img width="434" alt="截屏2023-12-03 下午2 43 04" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/b28c591a-1ec1-44e9-b9c5-b1e1e9175aab"> <br>
+This bug came up when student didn't not know how to use `-ne` and `-eq` for comment, and TA was good in helping him understand the concept. It's because the bash is not reporting an error, just a if statement logical error, because the program is working.
 
 ### Step 4
 The required files are `NumberGuessingGame.class` `NumberGuessingGame.java` `grade.sh` inside the `lab5` folder.

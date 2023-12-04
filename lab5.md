@@ -29,16 +29,60 @@ This bug came up when student didn't not know how to use `-ne` and `-eq` for com
 ### Step 4
 The file & directory structure needed is simply a new folder I called "DemoLab5" but this file can be named anything. The only two files that need to be made are "runB.sh" which will house the bash commands and "HelloWorld.java" which is the most basic java program which when run prints "Hello World" to a users terminal. The contents of each file before fixing the bug: The "runB.sh" consisted of
 
-javac HelloWorld.java
-java HelloWorld
+Path:
+```
+/Users/mark/Desktop/lab5
+```
+grade.sh:
+```
 set -e
-While the "HelloWorld.java" consisted of
+javac *.java
+if [ $? -ne 0 ]; then
+    echo "Compilation successful."
+    java NumberGuessingGame
+else
+    echo "Compilation failed. Check the code for errors."
+fi
+```
+NumberGuessingGame.java:
+```
+import java.util.Random;
+import java.util.Scanner;
 
-class HelloWorld{
-    public static void main(String[] args){
-        System.out.println("Hello World");
+public class NumberGuessingGame {
+
+    public static void main(String[] args) {
+        // Generate a random number between 1 and 100
+        Random random = new Random();
+        int secretNumber = random.nextInt(100) + 1;
+
+        System.out.println("Welcome to the Number Guessing Game!");
+        System.out.println("I have generated a random number between 1 and 100. Can you guess it?");
+
+        Scanner scanner = new Scanner(System.in);
+
+        int attempts = 0;
+        boolean hasGuessedCorrectly = false;
+
+        while (!hasGuessedCorrectly) {
+            System.out.print("Enter your guess: ");
+            int userGuess = scanner.nextInt();
+            attempts++;
+
+            if (userGuess == secretNumber) {
+                hasGuessedCorrectly = true;
+                System.out.println("Congratulations! You guessed it right in " + attempts + " attempts.");
+            } else if (userGuess < secretNumber) {
+                System.out.println("Too low. Try again.");
+            } else {
+                System.out.println("Too high. Try again.");
+            }
+        }
+
+        scanner.close();
     }
 }
+```
 The full command line (or lines) you ran to trigger the bug: The only command line neccesary to trigger this bug is bash runB.sh in a powershell terminal. A description of what to edit to fix the bug: All that is needed to fix this bug is to add a bash terminal instead of a powershell terminal. I'd just like to reiterate that although this bug may not seem the most complex, I believe it is hard to realize initally and can lead to a lot of stress from changing files that are not producing the bug as it seems as though the bash and java files are the one's causing the error.
 
 

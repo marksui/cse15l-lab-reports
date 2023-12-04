@@ -24,6 +24,9 @@ A detailed description of the inputs and contexts that triggered the fault: <br>
 ### Step 3
 <img width="640" alt="截屏2023-12-03 下午2 43 02" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/aa9dddf3-8bff-4bc0-9cf7-7005fcb8e3f1"> <br>
 <img width="434" alt="截屏2023-12-03 下午2 43 04" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/b28c591a-1ec1-44e9-b9c5-b1e1e9175aab"> <br>
+Here is the bug one:
+<img width="484" alt="截屏2023-12-03 下午2 21 52" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/3762d357-61a2-43da-9904-a03ea9da73c8">
+
 This bug came up when student didn't not know how to use `-ne` and `-eq` for comment, and TA was good in helping him understand the concept. It's because the bash is not reporting an error, just a if statement logical error, because the program is working.
 
 ### Step 4

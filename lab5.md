@@ -27,8 +27,11 @@ A detailed description of the inputs and contexts that triggered the fault: <br>
 This bug came up when student didn't not know how to use `-ne` and `-eq` for comment, and TA was good in helping him understand the concept. It's because the bash is not reporting an error, just a logical error, because the program is working.
 
 ### Step 4
-The file & directory structure needed is simply a new folder I called "DemoLab5" but this file can be named anything. The only two files that need to be made are "runB.sh" which will house the bash commands and "HelloWorld.java" which is the most basic java program which when run prints "Hello World" to a users terminal. The contents of each file before fixing the bug: The "runB.sh" consisted of
-
+The required files are `NumberGuessingGame.class` `NumberGuessingGame.java` `grade.sh` inside the `lab5` folder.
+```
+lab5 % ls
+NumberGuessingGame.class        NumberGuessingGame.java         grade.sh
+```
 Path:
 ```
 /Users/mark/Desktop/lab5

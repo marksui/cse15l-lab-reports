@@ -11,7 +11,7 @@ Detail the symptom: <br>
 
 A detailed description of the inputs and contexts that triggered the fault: <br>
 `Student's response: The working directory for the java and sh files are in /Users/mark/Desktop/lab5. I am really sure that I am in the working directory. When I entered those command in the terminal by my hands, it is okay. But when I used the bash, it is not working. I uploaded my screenshot and the code. Maybe it is my environment differences or my grade.sh it contains some format error.`
-<img width="826" alt="截屏2023-12-03 下午2 02 55" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/4307f7cc-890d-43e7-8d9c-61692920222f">
+<img width="822" alt="截屏2023-12-03 下午8 59 31" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/698a0292-80fd-4c7e-bdf7-632208d9d9ca">
 <img width="494" alt="截屏2023-12-03 下午2 21 55" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/3086d284-0219-426b-bf2b-4b371ef84d11">
 <img width="484" alt="截屏2023-12-03 下午2 21 52" src="https://github.com/marksui/cse15l-lab-reports/assets/146782343/3762d357-61a2-43da-9904-a03ea9da73c8">
 

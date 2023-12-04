@@ -86,8 +86,17 @@ public class NumberGuessingGame {
     }
 }
 ```
-The full command line (or lines) you ran to trigger the bug: The only command line neccesary to trigger this bug is bash runB.sh in a powershell terminal. A description of what to edit to fix the bug: All that is needed to fix this bug is to add a bash terminal instead of a powershell terminal. I'd just like to reiterate that although this bug may not seem the most complex, I believe it is hard to realize initally and can lead to a lot of stress from changing files that are not producing the bug as it seems as though the bash and java files are the one's causing the error.
-
+The edited code that fixed the bug, grade.sh:
+```
+set -e
+javac *.java
+if [ $? -eq 0 ]; then
+    echo "Compilation successful."
+    java NumberGuessingGame
+else
+    echo "Compilation failed. Check the code for errors."
+fi
+```
 
 ## Part 2
 I really enjoyed the process of the class, through constant practice and learning. Every week, I am wholeheartedly and actively participating in the labs to really get to grips with the new knowledge. I found vim and bash very interesting to learn. Especially `vim` let me know the newest way to operate. And `bash` taught me how commands become. Maybe I can understand it like this.
